@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+    <ul>
+        {% for visit in visits %}
+            <li>
+                ID: {{ visit.id }} <br>
+                <strong>{{ visit.visitor }} at {{ visit.date_time }}</strong> <br>
+                Reason: {{ visit.reason }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
